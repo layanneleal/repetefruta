@@ -17,10 +17,14 @@ function repetirFruta() {
   let resultado = ''
 
   for (let i = 1; i <= numero; i++) {
-    resultado = resultado  + '*'  
+    if(i % 2 == 1) {
+      resultado = resultado + fruta + ' * ' 
+    }else{
+      resultado = resultado + fruta + ' * '
+    }
   }
 
-  outResposta.textContent = fruta + resultado 
+  outResposta.textContent = resultado
 
 } 
 //Cria referência ao botão e após associa function ao evento click
