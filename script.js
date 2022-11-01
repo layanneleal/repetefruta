@@ -13,9 +13,10 @@ function repetirFruta() {
     alert('Insira os dados corretamente!!')
     return
   }
-  
+  //Variável que irá concatenar frutas e asteriscos
   let resultado = ''
 
+  //Cria um laço de repetição de 1 até o número informado
   for (let i = 1; i <= numero; i++) {
     if(i % 2 == 1) {
       resultado = resultado + fruta + ' * ' 
@@ -23,7 +24,7 @@ function repetirFruta() {
       resultado = resultado + fruta + ' * '
     }
   }
-
+  //Exibe as frutas e asteriscos
   outResposta.textContent = resultado
 
 } 
